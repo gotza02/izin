@@ -63,4 +63,4 @@ printf " Removing files script"
 removesc & sleep 3 & spinner
 
 rm -fr xd
-menu
+sleep 3 & menu
