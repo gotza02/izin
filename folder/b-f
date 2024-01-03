@@ -261,7 +261,7 @@ fi
 }
 
 function notification() {
-url_izin="https://raw.githubusercontent.com/yulius/izinsc/main/ip"
+url_izin="https://raw.githubusercontent.com/BvsshXyz/izinsc/main/ip"
 username=$(curl $url_izin | grep $IP | awk '{print $2}')
 valid=$(curl $url_izin | grep $IP | awk '{print $3}')
 exp="${valid}"
@@ -306,7 +306,7 @@ TEXT="
 <i>Automatic Notifications From</i>
 <i>BAYU VPN </i>
 <code>────────────────────</code>
-"'&reply_markup={"inline_keyboard":[[{"text":" ⛈️ ʙᴜʏ ꜱᴄʀɪᴘᴛ ⛈️ ","url":"https://t.me/xdxl_store"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":" ⛈️ ʙᴜʏ ꜱᴄʀɪᴘᴛ ⛈️ ","url":"https://t.me/BayuVpnStore"}]]}' 
 
 curl -s --max-time 10 -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
