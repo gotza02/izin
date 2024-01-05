@@ -244,7 +244,7 @@ echo ""
 if [[ $host == "1" ]]; then
 echo -e "   ${g}Masukan domain mu ! $NC"
 read -p "   Subdomain: " host1
-echo "IP=" >> /var/lib/fvstore/ipvps.conf
+echo "IP=" >> /var/lib/fvstore/ip.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
 echo ""
